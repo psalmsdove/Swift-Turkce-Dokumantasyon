@@ -22,3 +22,7 @@ Tek satırda birden fazla aynı türde değeri aralarında virgülle ayırarak t
 
 ## Değişkenleri ve Sabitleri İsimlendirme
 Değişkenler ve sabitler herhangi bir karakteri içerebilir, buna Unicode karakterler dahil. 
+>     let π = 3.14159
+>     let 你好 = "你好世界"
+>     let 🐶🐮 = "dogcow"
+
