@@ -34,10 +34,19 @@ Bir değşiken veya sabit tanımladıktan sonra bunu aynı tipteyse değiştirme
 
 > şu an değişkenimiz Bonjour.
 
-##Sabitleri ve değişkenleri yazdırma
+## Sabitleri ve değişkenleri yazdırma
 
 print() fonksiyonunu kullanarak bir sabitin veya değişkenin değerini yazdırabiliriz.
 
+> print("The current value of friendlyWelcome is \(friendlyWelcome)")
 
+> Ekranda "The current value of friendlyWelcome is Bonjour" yazacaktır.
 
+### Yorumlar
+Satırların başına // koyarak yorum satırı haline getirebiliriz. Yorum satırını xcode programı çalıştırmaz ve yoksayar. Kodunuzu inceleyen başka mühendisler kodunuzun ne işe yaradığını anlamak için bu yorum satırları çok işlevsel olabilir.
 
+> Diğer dillerin aksine, Swift dilinde ; bulunmaz. Ancak isterseniz kullanabilirsiniz.
+
+## Tam Sayılar
+
+Swift işareti olmayan ve işaretli 8, 16, 32 ve 64 bit formlarında tam sayılar sağlar. 
