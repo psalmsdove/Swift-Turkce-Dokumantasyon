@@ -26,3 +26,18 @@ Değişkenler ve sabitler herhangi bir karakteri içerebilir, buna Unicode karak
 >     let 你好 = "你好世界"
 >     let 🐶🐮 = "dogcow"
 
+Bir değşiken veya sabit tanımladıktan sonra bunu aynı tipteyse değiştirmek mümkündür.
+
+> var friendlyWelcome = "Hello"
+
+> friendlyWelcome = "Bonjour"
+
+> şu an değişkenimiz Bonjour.
+
+##Sabitleri ve değişkenleri yazdırma
+
+print() fonksiyonunu kullanarak bir sabitin veya değişkenin değerini yazdırabiliriz.
+
+
+
+
