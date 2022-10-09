@@ -1,4 +1,4 @@
-# Swift-Turkce-Dokumantasyon
+# Swift Türkçe Dokümantasyon
 Bu repo, Swift dilinin Türkçe dökümantasyonunu kullanıcılar ve dili yeni öğrenmek isteyenler için hazırlanmıştır.
 
 Swift, iOS, macOS, watchOS ve tvOS uygulamaları yapmak için kullanılan bir programlama dilidir. Swift geliştirirken C ve Objective-C dilinden bir sürü ortak şey olduğunu göreceksiniz. Int, Double, Float, Bool ve String verilerini içerir. Swift'de ayrıca Array, Set ve Dictionary gibi özellikler de bulunur. Bunlara ileride daha detaylıda değineceğiz.
@@ -115,7 +115,57 @@ typealias AudioSample = UInt16
 var maxAmplitudeFound = AudioSample.min
 // maxAmplitudeFound değerimiz şu an 0.
 ```
+## Booleans
 
+Swift dili basit bir Boolean tipine sahiptir. Sadece doğru veya yanlış olabilirler.
 
+```
+let portakallarTuruncudur = true
+let muzMavidir = false
+```
 
+Doğru kullanılırlarsa boolean değerleri çok kullanışlı olabilir.
 
+```
+if portakallarTuruncudur {
+    print("Evet doğru!")
+} else {
+    print("Hayır, değil.")
+}
+// ilk seçenek yazdırılacak.
+```
+
+## Tuples
+
+Tuples, birden çok değeri tek bir bileşik değerde gruplandırır. Bir tanımlama grubu içindeki değerler herhangi bir türden olabilir ve birbirleriyle aynı türden olmaları gerekmez. Bu örnekte (404, "Not Found"), bir HTTP durum kodunu tanımlayan bir tanımlama grubudur. HTTP durum kodu, bir web sayfası talep ettiğinizde bir web sunucusu tarafından döndürülen özel bir değerdir. Mevcut olmayan bir web sayfası talep ettiğinizde 404 Not Found durum kodu döndürülür.
+
+```
+let http404Error = (404, "Not Found")
+```
+
+Gördüğünüz gibi Int ve String bir değeri virgülle ayırarak tanımladık. İstediğiniz tipte ve istediğiniz kadar farklı şekilde tuple tanımlayabilirsiniz
+
+## Optionals
+
+Swift dilinde bir değişkenin değerinin olmaması nil değeri alabilmesi için o değişkenin optional olarak tanımlanmış olması gerekir. Bir değişken nil değeri alabiliyor ise o değişken optional bir değişkendir yani değer almasa da olur. Yani değişkenin bir değeri olabilir, ya da olmayabilir demektir.
+> Kaynak: https://www.mobilhanem.com/swift-optional/
+
+Bir değişken veya sabit tanımlanırken, değişken tipinin sonuna ! veya ? ekleyerek optional yapabiliriz. Örneğin Int ile Int? ayrı tiplerdir. Eğer bir değişkenin kesinlikle değer içerdiği biliniyorsa, optional kullanılmaz, bilinmiyorsa optional kullanılır.
+
+## Hata Yakalama
+
+Programın çalıştırılması sırasında karşılaşılabilecek bir hata durumunda cevap verilmesi için hata yakalama kullanılır. 
+```
+func hataFirlatabilir() throws {
+    //hata olabilir ya da olmayabilir, koda bağlı
+    }
+```
+throws kelimesini kullanarak bir fonksiyonun hata fırlatabileceğini belirtiriz. Hata fırlatabilecek bir fonksiyonu çağırdığınızda, try anahtar kelimesini kullanırsınız.
+```
+    do {
+        try canThrowAnError()
+        // hata fırlatılmadı
+    } catch {
+        // hata fırlatıldı
+    }
+```
