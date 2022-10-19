@@ -2,4 +2,4 @@ Bu repo, Swift dilini sıfırdan öğrenmek veya mevcut bilgisini geliştirmek a
 
 BURADA BULUNAN BÜTÜN BİLGİLER APPLE'IN RESMİ DOKÜMANTASYON SİTESİNDEN ALINMIŞ OLUP, BİREBİR ÇEVİRİ VE EKLEMELERLE HAZIRLANMIŞTIR.
 
-Kaynak: 
+Kaynak:  https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html
