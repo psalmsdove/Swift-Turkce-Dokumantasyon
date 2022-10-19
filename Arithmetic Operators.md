@@ -150,6 +150,19 @@ if !allowedEntry {
 // Prints "ACCESS DENIED"
 ```
 
+Mantıksal AND operatörü (a && b), genel ifadenin de doğru olması için her iki değerin de doğru olması gereken mantıksal ifadeler oluşturur.
+
+Her iki değer de yanlışsa, genel ifade de yanlış olacaktır. Aslında, ilk değer yanlışsa, ikinci değer değerlendirilmez bile çünkü genel ifadeyi doğruya eşitleme olasılığı yoktur. Bu, kısa devre değerlendirmesi olarak bilinir.
+```
+let enteredDoorCode = true
+let passedRetinaScan = false
+if enteredDoorCode && passedRetinaScan {
+    print("Welcome!")
+} else {
+    print("ACCESS DENIED")
+}
+// Prints "ACCESS DENIED"
+```
 Mantıksal OR operatörü (a || b), iki bitişik kanal karakterinden oluşan bir infix operatörüdür. Bunu, genel ifadenin doğru olması için iki değerden yalnızca birinin doğru olması gereken mantıksal ifadeler oluşturmak için kullanırsınız.
 ```
 let hasDoorKey = false
