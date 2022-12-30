@@ -35,3 +35,24 @@ Belirli bir String'in değiştirilip değiştirilemeyeceğini onu bir değişken
 ```
 ## characters ile çalışma
 
+Bir String için ayrı Karakter değerlerine, for-in döngüsüyle string üzerinde yineleme yaparak erişebilirsiniz:
+
+```
+for character in "Dog!🐶" {
+    print(character)
+}
+// D
+// o
+// g
+// !
+// 🐶
+```
+
+String değerleri, başlatıcıya argüman olarak bir Karakter değerleri dizisi iletilerek oluşturulabilir:
+
+```
+let catCharacters: [Character] = ["C", "a", "t", "!", "🐱"]
+let catString = String(catCharacters)
+print(catString)
+// Prints "Cat!🐱"
+```
